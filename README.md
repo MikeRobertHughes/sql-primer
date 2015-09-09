@@ -32,7 +32,7 @@ Answer - (Done)
 
 6. How much would it cost to buy one of each tool?
 Query -  SELECT SUM(price) FROM items WHERE LOWER(category) LIKE '%tool%';
-Answer - The sum of buying one of each tool is $46,477
+Answer - The sum of buying one of each tool is 46,477
 
 7. How many total items did we sell?
 Query -  SELECT SUM(quantity) FROM orders;
@@ -41,7 +41,7 @@ Answer - We sold 2,125 items.
 8. How much was spent on books?
 Query -  SELECT SUM(price * quantity) FROM orders INNER JOIN items ON orders.item_id = items.id WHERE LOWER(category) LIKE '%book%';
 Answer - The sum of all books sold where the category of the item contains the word 'books' is 
-        $180,356
+         1,081,352
 
 9. Simulate buying an item by inserting a User for yourself and an Order for that User.
 Query -  INSERT INTO users VALUES (51, 'Mike', 'Hughes','mike@hughes.com');
