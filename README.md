@@ -39,7 +39,7 @@ Query -  SELECT SUM(quantity) FROM orders;
 Answer - We sold 2,125 items.
 
 8. How much was spent on books?
-Query -  SELECT SUM(price) FROM orders INNER JOIN items ON orders.item_id = items.id WHERE LOWER(category) LIKE '%book%';
+Query -  SELECT SUM(price * quantity) FROM orders INNER JOIN items ON orders.item_id = items.id WHERE LOWER(category) LIKE '%book%';
 Answer - The sum of all books sold where the category of the item contains the word 'books' is 
         $180,356
 
