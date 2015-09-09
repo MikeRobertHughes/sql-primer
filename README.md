@@ -21,8 +21,7 @@ Answer - The cheapest book is:
         * 76|Ergonomic Granite Chair|Books|De-engineered bi-directional portal|1496
 
 4. Who lives at “6439 Zetta Hills, Willmouth, WY”? Do they have another address?
-Query - 1) SELECT * FROM addresses WHERE street = '6439 Zetta Hills';
-        2) SELECT * FROM addresses WHERE user_id = 40;
+Query -  SELECT * FROM users WHERE id = (SELECT * FROM addresses WHERE street = '6439 Zetta Hills');
 Answer - The person with User_id 40 lives at 6439 Zetta Hills, Willmouth, WY and they also live at
         'Wolff Forges, Lake Bryon, CA 31587'
 
