@@ -64,7 +64,7 @@ Answer ---> (Done)
 	Query ---> 1) SELECT count(\*), item\_id, title, category, description FROM orders INNER JOIN items ON orders.item\_id = items.id GROUP BY item\_id ORDER BY count(\*) DESC;
 	       <br><br>  2) SELECT (count(\*) \* price), count(\*), price, item\_id, title, category, description FROM orders INNER JOIN items ON orders.item\_id = items.id GROUP BY item\_id ORDER BY (count(\*) \* price) DESC;
 	
-	Answer ---> 1) There is a tie for the items sold the most between - Ergonomic Concrete Gloves, Practical Rubber Computer & Incredible Granite Car, with each having sold 9.
+	Answer ---> 1) There is a tie for the most orders between - Ergonomic Concrete Gloves, Practical Rubber Computer & Incredible Granite Car, with each having 9 orders.
 	
 	2) The item that grossed the most money is Practical Rubber Computer which brought in a gross total of 67,806.
 
